@@ -1,0 +1,64 @@
+<!DOCTYPE HTML> 
+<HTML> 
+<HEAD> 
+<script src="Discount.js"></script>
+</HEAD>
+ <BODY bgcolor="lightgrey">
+ <FORM name="form"> 
+<TABLE align="center"> 
+<TR >
+ <TD colspan="4"><h1>TRANSACTION DETAILS</h1></TD>
+</ TR>
+ <TR> <TD WIDTH="100%" COLSPAN="4"> </TD> 
+</TR> 
+<TR> <TD> TransactionID:</TD> <TD><INPUT type="text" id="TransactionID" placeholder="Enter your Tansaction ID" required></TD> 
+</TR> 
+<TR> <TD> ProductName:</TD> <TD><INPUT type="text" id="ProductName" placeholder="Product name" required></TD> 
+</TR>
+<TR> <TD> ProductPrice:</TD> <TD><INPUT type="text" id="ProductPrice" placeholder="Product Price" required></TD> 
+</TR>
+<TR> <TD> ProductQuantity:</TD> <TD><INPUT type="text" id="ProductQuantity" placeholder="Product Quantity" required></TD> 
+</TR>
+<TR> <TD> CustomerName:</TD> <TD><INPUT type="text" id="CustomerName" placeholder="CustomerName" required></TD> 
+</TR>
+<TR> <TD>CustomerDOB:</TD> <TD><INPUT type="date" id="CustomerDOB" required></TD> </TR> 
+<TR><TD>CustomerGender:</TD> <TD>Male<INPUT type="Radio" name="CustomerGender"> Female<INPUT type="Radio" name="CustomerGender" ></TD>
+ </TR>
+<TR> 
+<TD>CustomerCountry:</TD> 
+<TD><SELECT id="CustomerCountry">
+ <OPTION value="">Country</OPTION>
+ <OPTION value="India">India</OPTION> 
+ <OPTION value="China">China</OPTION> 
+ <OPTION value="Australia">Australia</ OPTION> 
+ <OPTION value="USA">Usa</OPTION> 
+ </SELECT></TD> 
+</TR> 
+<TR> 
+<TD><LABEL for="state">State:</ LABEL></TD> 
+<TD><INPUT list="stat" name="stat" ID="state"> 
+<DATALIST ID="stat"> 
+<OPTION value="Alabama">
+<OPTION value="Delhi"> 
+<OPTION value="Delaware"> 
+<OPTION value="Florida"> 
+<OPTION value="Hawaii"> 
+</DATALIST><BR> </TD> 
+</TR>
+<TR> <TD> CustomerCity:</TD> 
+<TD><SELECT id="CustomerCity"> 
+<OPTION value="">City</OPTION> 
+<OPTION value="New Delhi">New Delhi</ OPTION> 
+<OPTION value="North Delhi">Noth Delhi</OPTION> 
+<OPTION value="East Delhi">East Delhi</OPTION> 
+</SELECT></TD> 
+</TR>
+<TR>
+<TD colspan="2" align="center"> <input ID="button" type="button" value="submit" onclick="transaction(form)">
+ <input type="reset" value="reset">
+</TD> 
+</TR>    
+</FORM>
+  </table>
+</BODY> 
+</HTML> 
